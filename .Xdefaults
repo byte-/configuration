@@ -1,0 +1,75 @@
+! Xdefaults (~/.Xdefaults)
+! byte @ n-co.de
+
+! General Options
+*dpi:                   96
+*rgba:                  rgb
+*hinting:               true
+*antialias:             true
+*theme:                 aero-drop
+*hintstyle:             hintslight
+
+! Fonts
+! Multiple fonts set to display Eastern charsets properly
+*font:                  xft:erusfont:antialias=false, \
+                        -*-clearlyu-*-r-*-*-*-*-*-*-*-*-*-*, \
+			-*-clearlyu alternate glyphs-*-r-*-*-*-*-*-*-*-*-*-*, \
+                        xft:Baekmuk Dotum:antialias=false, \
+			xft: Baekmuk Dotum:antialias=false
+*boldFont:              xft:erusfont:antialias=false
+
+! URxvt general options
+URxvt.title:            terminal
+URxvt.saveLines:        5000
+URxvt.internalBorder:   2
+URxvt.externalBorder:   0
+URxvt.scrollBar:        false
+URxvt.urgentOnBell:     true
+URxvt.cursorColor:      #d8d8d8
+URxvt.cursorBlink:      true
+URxvt.depth:            32
+
+! URxvt Perl extensions
+URxvt.perl-lib:         /usr/lib/urxvt/perl/
+URxvt.perl-ext-common:  default,matcher,selection,
+URxvt.urlLauncher:      /usr/bin/chromium
+URxvt.cutchars:         '"'()*<>[]{|}
+URxvt*match.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@URxvt-]*[\\w/-]
+URxvt.matcher.button:   1
+
+! URxvt keybindings
+URxvt*keysym.Home:      \033[1~
+URxvt*keysym.End:       \033[4~
+
+! Define cursor
+Xcursor.theme:          Human
+
+! Color scheme
+
+*background:            #121212
+*foreground:            #FAFAFA
+
+! Black ------------------------------------------- !
+    *color0:            #404040
+    *color8:            #505050
+! Red --------------------------------------------- !
+    *color1:            #DE2C44
+    *color9:            #FF776E
+! Green ------------------------------------------- !
+    *color2:            #71B56E
+    *color10:           #BBDB8F
+! Yellow ------------------------------------------ !
+    *color3:            #F6FA7F
+    *color11:           #F5F7B2
+! Blue -------------------------------------------- !
+    *color4:            #429DF5
+    *color12:           #8DC2E0
+! Magenta ----------------------------------------- !
+    *color5:            #DB2A65
+    *color13:           #CF7693
+! Cyan -------------------------------------------- !
+    *color6:            #6B88B2
+    *color14:           #5DBFC9
+! White ------------------------------------------- !
+    *color7:            #D2D2D2
+    *color15:           #FAFAFA
