@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# Startup file (~/.startup)
+# byte @ n-co.de
+
+# To be executed upon starting xinit
+
+# Sleep before executing some essential daemons
+sleep 2s &
+urxvtd -q -o -f &
+# parcellite -d -n &
+
+# Start mpd and mpdscribble, if they aren't already started
+pidof mpd >& /dev/null
+if [ $? -ne 0 ]; then
+  mpd /home/byte/.config/mpd/config &
+fi
+pidof mpdscribble >& /dev/null
+if [ $? -ne 0 ]; then
+  mpdscribble --conf ~/.config/mpd/mpdscribble.conf &
+fi
+
