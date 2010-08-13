@@ -1,0 +1,8 @@
+music_directory     "/home/byte/music/"
+playlist_directory  "/home/byte/.config/mpd/playlists"
+db_file             "/home/byte/.config/mpd/mpd.db"
+log_file            "/home/byte/.config/mpd/mpd.log"
+error_file          "/home/byte/.config/mpd/mpd.error"
+pid_file            "/home/byte/.config/mpd/mpd.pid"
+state_file          "/home/byte/.config/mpd/mpdstate"
+
