@@ -1,0 +1,72 @@
+# ncmpcpp config (~/.ncmpcpp/config)
+# byte @ n-co.de
+
+# General
+
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_music_dir = "/home/byte/music"
+
+playlist_disable_highlight_delay = "3"
+message_delay_time = "4"
+
+# Formatting
+
+song_list_format = "{%a - }{%t}$R{(%l)}"
+song_library_format = "{%n - }{%t}|{%f}"
+tag_editor_album_format = "{%y }%b"
+browser_playlist_prefix = "$2playlist$9 "
+selected_item_prefix = "$1"
+selected_item_suffix = "$9"
+
+# colors are not supported for below veriables
+song_status_format = "%t{ by %a}{ from %b}{ (%y)}"
+song_window_title_format = "MPD: {%a - }{%t}|{%f}"
+song_columns_list_format = "(7)[cyan]{l} (28)[cyan]{a} (28)[]{b} (50)[cyan]{t}"
+
+# The following display modes take either "classic" or "columns"
+# Columns mode is declared above, in song_columns_list_format
+playlist_display_mode = "classic"
+browser_display_mode = "columns"
+search_engine_display_mode = "classic"
+
+
+# Colors
+# Yes, I really like the way cyan looks on here.
+
+colors_enabled = "yes"
+main_window_color = "cyan"
+main_window_highlight_color = "cyan"
+header_window_color = "cyan"
+volume_color = "cyan"
+progressbar_color = "cyan"
+statusbar_color = "cyan"
+color1 = "cyan"
+color2 = "cyan"
+active_column_color = "cyan"
+active_window_border = "blue"
+
+# Configuration
+
+header_visibility = "yes"
+statusbar_visibility = "yes"
+header_text_scrolling = "yes"
+
+fancy_scrolling = "no"
+cyclic_scrolling = "yes"
+
+allow_physical_files_deletion = "no"
+allow_physical_directories_deletion = "no"
+ignore_leading_the = "no"
+block_search_constraints_change_if_items_found = "yes"
+mouse_support = "yes"
+enable_window_title = "yes"
+
+lyrics_database = "1"
+external_editor = "vim"
+use_console_editor = "yes"
+
+default_space_mode = "add"
+display_screens_numbers_on_start = "no"
+clock_display_seconds = "yes"
+display_bitrate = "yes"
