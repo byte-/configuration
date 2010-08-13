@@ -2,7 +2,7 @@
 -- mu @ freenode
 
 theme = {}
-theme.confdir = awful.util.getdir("config") .. "/themes/byte"
+theme.confdir = awful.util.getdir("config") .. "/theme"
 
 theme.font          = "cure 10"
 theme.font_alt      = "-artwiz-cure-*-r-normal-*-*-*-*-*-*-*-iso8859-1"
