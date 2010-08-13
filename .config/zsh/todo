@@ -1,0 +1,7 @@
+# Todo list (~/.config/zsh/todo)
+# byte @ n-co.de
+
+# Simple todo list to be echoed at the start of the shell
+# echo "Sample todo list item"
+
+# TODO (ironically): Create a few functions to aid in the addition and removal of todo items

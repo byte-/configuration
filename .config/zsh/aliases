@@ -1,0 +1,36 @@
+### zsh aliases (~/.config/zsh/aliases)
+### byte @ n-co.de
+
+### To add these to your .zshrc, use `source [path]`
+
+# Directory shortcuts
+alias home="cd ~"
+alias music="cd ~/music"
+
+# Program defaults (mainly, this is for tidy config files)
+#alias mpc = mpc --format [TBC]
+alias elinks="elinks -config-dir \".config/elinks\""
+alias weechat-curses="weechat-curses -d ~/.config/weechat"
+alias weechat="weechat-curses -d ~/.config/weechat"
+alias scrot="scrot '/home/byte/images/screens/%m-%d_%I-%M.png'"
+alias mutt="mutt -F ~/.config/mutt/muttrc"
+alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+
+# Utilities
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias df="df -h"
+alias du="du -c -h"
+alias ping="ping -c 5"
+alias pstree="pstree -G" 
+
+# System
+alias shutdown="sudo shutdown -h now"
+alias reboot="sudo reboot"
+alias battery="acpi"
+alias ..="cd .."
+alias startx="xinit"
+
+# Servers
+alias feral='ssh komodo-dragon.feralhosting.com'
+alias portage-update='sudo emerge --sync && sudo emerge -avuND world'
